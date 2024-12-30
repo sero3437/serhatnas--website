@@ -1,0 +1,174 @@
+/* Genel stil ayarlar� */
+body {
+	font-family: 'Arial', sans-serif;
+	background: linear-gradient(135deg, #e0f7fa, #80deea); /* Yumu�ak mavi-ye�il gradient */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+header {
+	background-color: #00796b;
+	color: white;
+	text-align: center;
+	padding: 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+	header h1 {
+		font-size: 2.5em;
+		margin: 0;
+		animation: slideIn 1s ease-out;
+	}
+
+	header p {
+		font-size: 1.2em;
+		animation: fadeIn 2s ease-in-out;
+	}
+
+/* Ho� geldiniz mesaj� animasyonu */
+@keyframes slideIn {
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+main {
+	padding: 20px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+section {
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+	section:hover {
+		transform: scale(1.03);
+	}
+
+h2, h3 {
+	color: #00796b;
+}
+
+/* Instagram ve LinkedIn simgelerinin yerle�imi */
+.social-links {
+	text-align: center;
+	margin: 20px 0;
+}
+
+	.social-links .social-icons a {
+		margin: 0 15px;
+		transition: transform 0.3s ease;
+	}
+
+		.social-links .social-icons a:hover {
+			transform: scale(1.2);
+		}
+
+	.social-links img {
+		width: 60px;
+	}
+
+/* Projelerim k�sm� */
+.projects {
+	background-color: #f1f8e9; /* Yumu�ak bir ye�il arka plan */
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+	.projects p {
+		font-size: 1.1em;
+		color: #00796b;
+		font-style: italic;
+	}
+
+/* Feedback textarea */
+textarea {
+	width: 100%;
+	height: 120px;
+	margin-top: 10px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 16px;
+	resize: none;
+	transition: border-color 0.3s ease;
+}
+
+	textarea:focus {
+		border-color: #00796b;
+		outline: none;
+	}
+
+/* G�nder butonu */
+button {
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: #00796b;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 1.1em;
+	transition: background-color 0.3s ease;
+}
+
+	button:hover {
+		background-color: #004d40;
+	}
+
+/* Footer stil ayarlar� */
+footer {
+	background-color: #00796b;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	font-size: 0.9em;
+}
+
+/* Responsive tasar�m */
+@media (max-width: 768px) {
+	header {
+		padding: 30px;
+	}
+
+	section {
+		margin: 10px;
+	}
+
+	footer {
+		font-size: 0.8em;
+	}
+}

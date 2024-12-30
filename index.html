@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serhat Nas'ın Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hoş Geldiniz!</h1>
+            <p>Serhat Nas'ın Web Sitesine Hoş Geldiniz</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Merhaba ben Serhat Nas</h2>
+            <p>Batman Üniversitesi Bilgisayar Mühendisliği Bölümünde 2. sınıf öğrencisiyim.</p>
+        </section>
+
+        <section class="projects">
+            <h3>Projelerim</h3>
+            <p>Projelerim yakında burada gözükecek.</p>
+        </section>
+
+        <section class="social-links">
+            <h3>Instagram ve LinkedIn Hesaplarım</h3>
+            <div class="social-icons">
+                <!-- Instagram Linki -->
+                <a href="https://www.instagram.com/nas60serhat/profilecard/?igsh=MXp6NG5qbXdlZmk4" target="_blank">
+                    <img src="image/insta.png" alt="Instagram" width="60">
+                </a>
+                <!-- LinkedIn Linki Güncellendi -->
+                <a href="https://www.linkedin.com/in/serhat-nas-64422a33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="image/link.png" alt="LinkedIn" width="60">
+                </a>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <h3>Fikrini Belirt</h3>
+            <textarea id="userFeedback" placeholder="Fikrini buraya yazabilirsin..."></textarea>
+            <button onclick="submitFeedback()">Gönder</button>
+            <p id="feedbackMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Serhat Nas | Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>
